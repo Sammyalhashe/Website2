@@ -1,6 +1,17 @@
 # Website2
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
+Second attempt at my personal website. First iteration was coded when I was
+learning web development. As a result, I ended up trying to add everything
+I learned _at once_, causing a **lot** of bloat and the server needing to download
+a lot whenever the page was loaded.
+
+The plan is to have a **much** lighter version of my site.
+
+So far:
+
+-   Implemented Angular Material Components
+    -   Plan to implement Angular Material Layout for consistency
+-   Also have w3's css implemented, but should think of completely replacing with Angular Material
 
 ## Development server
 
