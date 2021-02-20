@@ -1,0 +1,119 @@
+.main {
+    /*min-height: 100vh;*/
+    /*height: 100%;*/
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    /* font-family: 'Rubik', sans-serif; */
+}
+
+.move_middle {
+    text-align: center;
+    margin: 3em;
+    align-content: center;
+    /* border: orange solid 5px; */
+}
+
+.resume_dl_holder {
+    display: block;
+    /* width: 100%; */
+    /* border: white dashed 3px; */
+}
+
+.mainContainer {
+    min-height: calc(100vh - 50px);
+    height: calc(100vh - 50px);
+    /*padding: 10px;*/
+    background-color: black;
+    /*background-image: linear-gradient(#4B0082, teal);*/
+    /*background-image: linear-gradient(teal, lightgrey);*/
+    flex-grow: 2;
+}
+
+/* .wrapper1 {
+    display: block;
+    position: relative;
+    left: 18em;
+    width: calc(100% - 18em);
+    margin: 0px;
+    z-index: 999;
+    border: orange solid 5px;
+} */
+
+.mainInfo {
+    margin: 3% auto 0 auto;
+    /*margin: 0 auto;*/
+    display: block;
+    color: white;
+    position: relative;
+    top: 80px;
+    z-index: 999;
+}
+/*.mainInfo >*/
+.sammyNameLarge {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+}
+
+/*.mainInfo >*/
+#picME {
+    display: block;
+    margin: 50px auto;
+    padding: 15px;
+    border-radius: 50%;
+    transform: scale(1.3);
+}
+
+.mainContainer > .whoami_first {
+    position: absolute;
+    width: 150px;
+    border: white 5px dashed;
+    z-index: 999;
+    color: white;
+    background-color: #e97770;
+    padding: 0 50px;
+    left: calc(50% - (150px + 100px) / 2);
+    font-size: 18px;
+    text-align: center;
+    bottom: 0;
+}
+
+.secondContainer {
+    /*padding: 10px;*/
+    /*background-color: inherit;*/
+    background-color: #e97770;
+    flex-grow: 1;
+    z-index: 999;
+}
+
+.secondContainer > .extraInfo {
+    display: block;
+    margin: 0 auto;
+    color: black;
+}
+
+.extraInfo > .whoami {
+    /* border: orange solid 3px; */
+    text-align: center;
+    display: block;
+    margin: 10px 50px;
+}
+.footer {
+    height: 25px;
+    padding-top: 10px;
+    flex-grow: 1;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+}
+
+#footer {
+    text-align: center;
+}
+
+#footer > .social-media {
+    padding-left: 10px;
+    padding-right: 10px;
+    bottom: 0;
+}

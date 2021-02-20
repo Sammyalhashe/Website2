@@ -1,0 +1,95 @@
+html {
+}
+
+body {
+}
+
+#top {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    min-height: 100vh;
+    height: 100%;
+    width: 100vw;
+    /* background-color: black; */
+    background-color: #2d1d50;
+    font-family: 'Rubik', sans-serif;
+}
+
+.mainNav {
+    height: 50px;
+    /* position: fixed; */
+    /*flex-grow: 0;*/
+    background-color: inherit;
+    z-index: 999;
+    box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+}
+
+.routerHolder {
+    /*flex-grow: 1;*/
+}
+
+.navLink {
+    margin: 0 5px 0 5px;
+    padding: 5px;
+    text-decoration: none;
+    transition: all 0.7s;
+    color: white;
+}
+
+navLink:hover {
+    font-weight: bold;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+#loader {
+    padding: 15px;
+    font-size: 30px;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: black;
+    color: black;
+    opacity: 0.5;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#loaderWords {
+    position: relative;
+    top: 50%;
+    opacity: 1;
+    margin: auto auto;
+    text-align: center;
+    animation: spinner 2s linear infinite;
+}
+
+.loader {
+    position: relative;
+    top: 50%;
+    margin: auto auto;
+    text-align: center;
+    transform: scale(0.5);
+}
+
+.linkActive {
+    /*transform: scale(1.3);*/
+    /*padding: 10px;*/
+    /*background-color: grey;*/
+    font-weight: bold;
+}

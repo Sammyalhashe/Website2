@@ -1,0 +1,53 @@
+<div class="projectHolder">
+    <!-- <section [@listAnimation] *ngFor="let project of this.projects">
+        <a href="#" class="image"
+            ><img
+                [src]="project.picture"
+                [alt]="project.description"
+                data-position="center center"
+        /></a>
+        <div class="content">
+            <div class="inner">
+                <h2>Sed ipsum dolor</h2>
+                <p>
+                    Phasellus convallis elit id ullamcorper pulvinar. Duis
+                    aliquam turpis mauris, eu ultricies erat malesuada quis.
+                    Aliquam dapibus.
+                </p>
+                <ul class="actions">
+                    <li>
+                        <a href="generic.html" class="button">Learn more</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section> -->
+    <mat-grid-list [@listAnimation] [cols]="this.innerWidth > 1000 ? 3 : this.innerWidth < 730 ? 1 : 2" [rowHeight]="this.innerWidth > 1000 ? '1:1.1' : this.innerWidth < 730 ? '1:1.4' : '1:1.4'">
+        <mat-grid-tile *ngFor="let project of this.projects">
+            <mat-card class="example-card">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image">
+                        <fa-icon [icon]="faCode"></fa-icon>
+                    </div>
+                    <mat-card-title>{{ project.name }}</mat-card-title>
+                    <mat-card-subtitle>
+                        {{ project.technology }}
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <!--<div [ngStyle]="{'background-image': 'url(' + project.picture + ')'}" class="header-image"></div>-->
+                <!--<mat-card-content>-->
+                <!--<p [innerHTML]="project.description"></p>-->
+                <mat-card-actions>
+                    <a mat-button [href]="project.url" target="_blank">View Source
+                        <fa-icon [icon]="faGithub"></fa-icon>
+                    </a>
+                    <a *ngIf="project.site" [href]="project.site" target="_blank" mat-button>See It</a
+                    >
+                </mat-card-actions>
+                <!--*ngIf="this.innerWidth > 730"-->
+                <img  mat-card-image [src]="project.picture" [alt]="project.description" class="projectPicture" />
+                <!--</mat-card-content>-->
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>

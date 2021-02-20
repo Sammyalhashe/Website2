@@ -1,0 +1,42 @@
+<!--Navbar (sit on top) -->
+
+<div id="top">
+    <mat-toolbar
+        appPictureScroll
+        [pagePicturePosition]="-0.7"
+        (pictureInPosition)="sendMessage($event)"
+        class="mainNav"
+    >
+        <span class="navLeft">
+            <a
+                mat-button
+                id="sammyNameButton"
+                [routerLink]="['/home']"
+                routerLinkActive="linkActive"
+                class="navLink"
+                >Sammy Al Hashemi</a
+            >
+        </span>
+        <span class="spacer"></span>
+        <span class="navRight">
+            <a
+                mat-button
+                *ngFor="let dest of this.routeTitles"
+                [routerLink]="['/' + dest.path]"
+                routerLinkActive="linkActive"
+                class="navLink"
+                >{{ dest.name }}</a
+            >
+        </span>
+    </mat-toolbar>
+    <div class="routerHolder" [@routeAnimation]="prepRouteState(routerOutlet)">
+        <router-outlet #routerOutlet="outlet"></router-outlet>
+    </div>
+</div>
+
+<div id="loader" class="myloader" *ngIf="this.loading">
+    <!--<div id="loaderWords">-->
+    <!--<fa-icon [icon]="faSpinner"></fa-icon>-->
+    <!--</div>-->
+    <mat-spinner class="loader"></mat-spinner>
+</div>

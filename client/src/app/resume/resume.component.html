@@ -1,0 +1,348 @@
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px; height:auto;">
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+        <!-- Left Column -->
+        <div class="w3-third">
+            <div class="w3-white w3-text-grey w3-card-4">
+                <div class="w3-display-container">
+                    <!-- Change slashes for different platforms -->
+                    <!--<img src="/assets/images/SanFranBeach.jpg" style="width:100%;" alt="Avatar">-->
+                    <img
+                        [src]="this.pictureURL"
+                        style="width:100%;"
+                        alt="Avatar"
+                    />
+                    <div class="w3-display-topleft w3-container w3-text-black">
+                        <!-- Font color black -->
+                        <h2 style="color: #000000">Sammy Al Hashemi</h2>
+                    </div>
+                </div>
+                <div class="w3-container">
+                    <br />
+                    <p>
+                        <fa-icon [icon]="faPython"></fa-icon>
+                        Device Characterization Engineer
+                    </p>
+                    <!-- Google Home Icon; used &emsp for tab spaces -->
+                    <p class="info-zone">
+                        <!--<i class="material-icons" style="color:purple">home</i>-->
+                        <fa-icon [icon]="faHome"></fa-icon>
+                        &emsp;Mississauga, Ontario, Canada
+                    </p>
+                    <p class="info-zone">
+                        <fa-icon [icon]="faEnvelope"></fa-icon>
+                        sammy.alhashemi@mail.utoronto.ca
+                    </p>
+                    <p class="info-zone">
+                        <fa-icon [icon]="faPhone"></fa-icon>
+                        (647)-463-2638
+                    </p>
+                    <!-- A Literal Line division inserted -->
+                    <hr />
+                    <p class="w3-large">
+                        <b>
+                            <i
+                                class="skillsLogo fa fa-asterisk fa-fw w3-margin-right w3-text-purple "
+                            ></i>
+                            Skills
+                        </b>
+                    </p>
+                    <!--<a id="button1" (click)="this.toggler()">ANIMATE</a>-->
+                    <p><fa-icon [icon]="faPython"></fa-icon> Python</p>
+                    <div class="w3-light-grey w3-round-xlarge w3-small">
+                        <div
+                            class="w3-container w3-center w3-round-xlarge w3-purple score"
+                            style="width:80%;"
+                        >
+                            80%
+                        </div>
+                    </div>
+                    <p><fa-icon [icon]="faAngular"></fa-icon> Angular</p>
+                    <div class="w3-light-grey w3-round-xlarge w3-small">
+                        <div
+                            class="w3-container w3-center w3-round-xlarge w3-purple score"
+                            style="width:75%"
+                        >
+                            75%
+                        </div>
+                    </div>
+                    <p><fa-icon [icon]="faJS"></fa-icon> HTML-CSS-Javascript</p>
+                    <div class="w3-light-grey w3-round-xlarge w3-small">
+                        <div
+                            class="w3-container w3-center w3-round-xlarge w3-purple score"
+                            style="width:40%"
+                        >
+                            40%
+                        </div>
+                    </div>
+                    <p><fa-icon [icon]="faJava"></fa-icon> Java</p>
+                    <div class="w3-light-grey w3-round-xlarge w3-small">
+                        <div
+                            class="w3-container w3-center w3-round-xlarge w3-purple score"
+                            style="width:30%"
+                        >
+                            <div class="w3-center w3-text-white">30%</div>
+                        </div>
+                    </div>
+                    <!-- A Line Break -->
+                    <br />
+                    <p class="w3-large w3-text-theme">
+                        <b>
+                            <i
+                                class="fa fa-globe fa-fw w3-margin-right w3-text-purple"
+                            ></i
+                            >Languages</b
+                        >
+                    </p>
+                    <p>English</p>
+                    <div class="w3-light-grey w3-round-xlarge">
+                        <div
+                            class="w3-round-xlarge w3-purple"
+                            style="height:24px;width:100%"
+                        ></div>
+                    </div>
+                    <!-- A Line Break -->
+                    <br />
+                </div>
+            </div>
+            <div class="w3-white w3-text-grey w3-card-4">
+                <br />
+                <p class="w3-large">
+                    <b>
+                        <i
+                            class="fa fa-download fa-fw w3-margin-right w3-text-purple "
+                        ></i>
+                        Download
+                    </b>
+                </p>
+                <!--<a id="PDFDownload" href="/assets/Downloadable/resume.pdf" download>Download Resume</a>-->
+                <a
+                    id="PDFDownload"
+                    [href]="this.resumeURL"
+                    target="_blank"
+                    download
+                    >Download Resume</a
+                >
+            </div>
+            <br />
+            <!-- End Left Column -->
+        </div>
+        <!-- Right Column -->
+        <div class="w3-twothird">
+            <div class="w3-container w3-card w3-white w3-margin-bottom">
+                <h2 class="w3-text-grey w3-padding-16">
+                    <i
+                        class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple"
+                    ></i
+                    >Work Experience
+                </h2>
+                <div class="w3-container">
+                    <h5 class="w3-opacity">
+                        <b
+                            >Device Characterization and Product Engineering
+                            Intern</b
+                        >, <i>Microsemi Corp</i>.
+                    </h5>
+                    <h6 class="w3-text-purple">
+                        <i class="fa fa-calendar fa-fw w3-margin-right"></i>July
+                        2017 - August 2018
+                    </h6>
+                    <ul class="projectList">
+                        <li>
+                            Worked on a collaborative team to develop test
+                            structures and designs to test and characterize
+                            Microsemi FPGA products, specifically their G5
+                            product that was shipped out to market.
+                        </li>
+                        <li>
+                            Using the developed test structures, I characterized
+                            three main components within the FPGA.
+                        </li>
+                        <li>
+                            I took part in weekly meetings to update and
+                            collaborate with a subset of my team in India.
+                        </li>
+                        <li>
+                            Performed design creation, design simulation, and
+                            design testing at offsite vendors to fully
+                            characterize the component(s) worked on.
+                        </li>
+                    </ul>
+                    <hr />
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity">
+                        <b>Undergraduate Research Assistant</b>,
+                        <i>University of Toronto, AP <sub>2</sub>D Labs</i>
+                    </h5>
+                    <h6 class="w3-text-purple">
+                        <i class="fa fa-calendar fa-fw w3-margin-right"></i>May
+                        2015 - Sept 2016
+                    </h6>
+                    <b>2015</b>
+                    <ul class="projectList">
+                        <li>
+                            Assisted a graduate student in his research in a
+                            photovoltaics lab
+                        </li>
+                        <li>
+                            Coded numerical eigensolvers to convey expected
+                            behaviour
+                        </li>
+                        <li>
+                            Provided a detailed report on numerical methods
+                            recommended, as well as methods tried and
+                            implemented
+                        </li>
+                    </ul>
+                    <b>2016</b>
+                    <ul class="projectList">
+                        <li>
+                            Worked with modelling lamnguage LAMMPSto simulate
+                            different behaviour of different gaseous substances
+                            being introduced to a carbon substrate
+                        </li>
+                        <li>
+                            This project furthered the understanding of the
+                            graphene production process, specifically if it can
+                            be synthesized at lower temperatures using AiMS
+                            instead of the normal, energy intensive CVD process.
+                        </li>
+                    </ul>
+                    <hr />
+                </div>
+                <div class="w3-container">
+                    <h5 class="w3-opacity">
+                        <b>Junior Tennis Coach</b>,
+                        <i>Ontario Racquet Club/Pine Point Tennis Club</i>
+                    </h5>
+                    <h6 class="w3-text-purple">
+                        <i class="fa fa-calendar fa-fw w3-margin-right"></i>May
+                        2011 - Sept 2014
+                    </h6>
+                    <p>
+                        Supervisor(s): Giulio Morelli (Tennis Canada Coach Level
+                        5) (647)-404-0248
+                    </p>
+                    <br />
+                </div>
+            </div>
+            <div class="w3-container w3-card w3-white">
+                <h2 class="w3-text-grey w3-padding-16">
+                    <span class="eduLogo">
+                        <i
+                            class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple eduLogo"
+                        ></i> </span
+                    >Education
+                </h2>
+                <div class="w3-container">
+                    <h4 class="w3-opacity">
+                        <b>University of Toronto</b>
+                    </h4>
+                    <h5 class="w3-opacity">
+                        <b>Bachelor of Applied Science and Engineering</b>,
+                        <i>Department of Engineering Science</i>
+                    </h5>
+                    <h6 class="w3-text-purple">
+                        <i class="fa fa-calendar fa-fw w3-margin-right"></i>Sept
+                        2014 - Present
+                    </h6>
+                    <p>
+                        Enrolled in the Engineering Science Program. I chose the
+                        Physics option which focuses on engineering design with
+                        major physics applications
+                        <br />
+                        <b>cGPA:</b>
+                        <i>3.56</i>
+                    </p>
+                    <hr />
+                </div>
+                <div class="w3-container">
+                    <h4 class="w3-opacity">
+                        <b>Mentor College</b>,
+                        <i>High School</i>
+                    </h4>
+                    <h5 class="w3-text-purple">
+                        <i class="fa fa-calendar fa-fw w3-margin-right"></i>2017
+                    </h5>
+                    <p>
+                        <b>High School Diploma</b>
+                    </p>
+                    <hr />
+                </div>
+                <div class="w3-container">
+                    <h4 class="w3-opacity">
+                        <b>Coursera</b>
+                    </h4>
+                    <h5 class="w3-text-purple">
+                        <i class="fa fa-calendar fa-fw w3-margin-right"></i>2017
+                    </h5>
+                    <p>
+                        <b>Courses Taken:</b>
+                        <br />
+                    </p>
+
+                    <ul class="w3-ul">
+                        <li>
+                            <i
+                                class="material-icons"
+                                style="color:black; size: 16px"
+                                >navigate_next</i
+                            >&emsp;
+                            <a
+                                id="button1"
+                                href="https://www.coursera.org/learn/machine-learning/"
+                                title="ML"
+                                >Machine Learning, Andrew Ng
+                            </a>
+                        </li>
+                    </ul>
+                    <hr />
+                </div>
+            </div>
+            <!-- End Right Column -->
+        </div>
+        <!-- End Grid -->
+    </div>
+    <!-- End Page Container -->
+</div>
+<footer class="w3-container w3-purple w3-center w3-margin-top">
+    <!-- Used the text-decoration css style inline to remove underlines from these hrefs -->
+    <p>Find me on social media.</p>
+    <a
+        href="https://www.facebook.com/sammy.alhashemi"
+        title="Facebook"
+        style="text-decoration: none"
+    >
+        <fa-icon [icon]="faFacebook"></fa-icon>
+    </a>
+    <a
+        href="https://www.instagram.com/sammyalhashemi/"
+        title="Instagram"
+        style="text-decoration: none"
+    >
+        <fa-icon [icon]="faInstagram"></fa-icon>
+    </a>
+    <a
+        href="https://twitter.com/SammyAlhashemi1"
+        title="Twitter"
+        style="text-decoration: none"
+    >
+        <fa-icon [icon]="faTwitter"></fa-icon>
+    </a>
+    <a
+        href="https://www.linkedin.com/in/sammy-alhashemi-2a9865a1/"
+        title="LinkedIn"
+        style="text-decoration: none"
+    >
+        <fa-icon [icon]="faLinkedin"></fa-icon>
+    </a>
+    <a
+        href="https://github.com/Sammyalhashe"
+        title="GitHub"
+        style="text-decoration: none"
+    >
+        <fa-icon [icon]="faGithub"></fa-icon>
+    </a>
+</footer>
